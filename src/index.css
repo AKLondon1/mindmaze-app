@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
+  background: #f4f4f4;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  max-width: 480px;
+  width: 100%;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 16px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #3730a3;
+}
+.timer-bar-container {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.timer-bar {
+  height: 100%;
+  background-color: #4f46e5;
+  transition: width 1s linear;
+}
+.App.dark {
+  background-color: #111;
+  color: #eee;
+}
+
+.App.dark button {
+  background-color: #333;
+  color: #fff;
+}
+
+.App.dark .timer-bar {
+  background-color: #10b981;
+}
+.question-progress-container {
+  height: 8px;
+  background-color: #bbb;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.question-progress-bar {
+  height: 100%;
+  background-color: #10b981;
+  transition: width 0.4s ease;
+}
